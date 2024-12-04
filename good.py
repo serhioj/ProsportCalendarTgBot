@@ -19,7 +19,7 @@ import os
 # Load environment variables
 load_dotenv()
 
-TOKEN = "6389347025:AAGIwU8Goyqvd7yAXRleeL47xPhNfBCdnZY"
+TOKEN = os.getenv("TOKEN")
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
